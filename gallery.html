@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My gallery</title>
+	<style>
+		.wrapper{
+			width: :100%;
+			margin: 50px auto;
+		}
+		
+		div.gallery{
+			margin-top: 50px;
+		}
+
+		ul{
+
+	
+			list-style-type: none;
+		}
+		div.gallery ul li{
+			position: relative;
+	float: left;
+	width: 300px;
+	height: 400px;
+	margin: 5px;
+	padding: 5px;
+}
+div.gallery ul li img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 5px;
+	width: 300px;
+	height: 400px;
+}
+	body{
+			background-color: purple;
+			color: green;
+			font-family: courier;
+		}
+
+		div.gally ul li, div.gallery li img{
+			transition:all 0.5s ;
+		}
+		div.gallery ul li img:hover{
+			width: 380px;
+			height: 480px;
+			margin-top: -280px;
+			margin-left: -250px;
+			top: 65%;
+			left: 65%;
+
+		}
+	</style>
+
+	
+</head>
+<body>
+	<button class="btn" onclick="document.location = './index.html'">Main Page</button>
+	<div id="header">
+		<h1>Caden's Gallery</h1>
+	</div>
+	<div class = "wrapper"><
+		<div class = "gallery">
+			<ul>
+				<li><img src = "./meme-33.jpg"></li>
+				<li><img src = "./LunarWrapped.PNG"></li>
+				<li><img src = "./portofolio.jpg"></li>
+				<li><img src = "./IMG_1204.jpg"></li>
+				<li><img src = "./IMG_4634.jpg"></li>
+				<li><img src = "./IMG_4628.jpg"></li>
+				<li><img src = "./IMG_4629.jpg"></li>
+				<li><img src = "./cena.PNG"></li>
+
+			</ul>
+			</div>
+		</div>
+</body>
+</html>

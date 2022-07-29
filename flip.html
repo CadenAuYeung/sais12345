@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>top 4 games</title>
+	<style>
+		body{
+			background-color: blue;
+			color: yellow;
+			font-family: courier;
+
+		}
+ .main{
+ 	display: flex;
+ 	position: absolute;
+ 	justify-content:center;
+ 	width: 100%;
+ 	height: 100%;
+ }
+ table tr{
+ 	width: 100%;
+ 	height: 100%;
+ }
+ td{
+ 	width: 50%;
+ 	height: 100%;
+ 	padding-bottom: 30px;
+ }
+ tr{margin-bottom: 50px;
+ }
+table{
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.card{
+		background-color: transparent;
+		width: 400px;
+		height: 400px;
+		perspective: 1000px;
+	}	
+
+	.card img{
+		width: 400px;
+		height: 400px;
+	}
+
+	.inner{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		transition: transform 3s;
+		transform-style: preserve-3d;
+	}
+	.front, .back{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		backface-visibility: hidden;
+		-webkit-backface-visility: hidden;
+		font-size: 50px;
+		color: yellow;
+	}
+	.back{
+		background-color: cadetblue;
+		transform: rotateX(180deg);
+	}
+	.card:hover .inner{
+		transform: rotateX(180deg);
+	}
+
+
+</style>
+</head>
+<body>
+	<button class="btn" onclick="document.location = './index.html'">Main Page</button>
+	<div class = "main">
+		<table class = "center">
+			<tr>
+				<td>
+					<div class = "card">
+						<div class = "inner">
+							<div class ="image">
+						<img src="https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg"class = "front">
+					</div>
+					<div class = "back">
+						<p>Minecraft</p>
+				</div>
+			</div>
+		</div>
+				</td>
+				<td>
+					<div class = "card">
+						<div class = "inner">
+							<div class ="image">
+						<img src="https://zmart.hk/wp-content/uploads/2020/06/mario-kart-8-deluxe-switch-hero.jpg"class = "front">
+					</div>
+					<div class = "back">
+						<p>Mario Kart 8</p>
+				</div>
+			</div>
+		</div>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class = "card">
+						<div class = "inner">
+							<div class ="image">
+						<img src="https://images3.alphacoders.com/885/885750.jpg"class = "front">
+					</div>
+					<div class = "back">
+						<p>Roblox</p>
+				</div>
+			</div>
+		</div>
+				</td>
+				<td>
+					<div class = "card">
+						<div class = "inner">
+							<div class ="image">
+						<img src="https://assets.nintendo.eu/image/upload/f_auto,q_auto,t_product_tile_desktop/MNS/NOE/70010000000127/SQ_NSwitch_SuperMarioOdyssey_HomepageWithOverlay"class = "front">
+					</div>
+					<div class = "back">
+						<p>Mario Odyssey</p>
+				</div>
+			</div>
+		</div>
+					
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>
